@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accueil rest27</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+        	td {
+        		border:1px solid #000000;
+        	}
+        </style>
+    </head>
+    <body>
+		<div style="text-align:center">
+			<h1>Accueil rest27</h1>
+			<div style="display:inline-block;">
+			<table>
+				<tr>
+					<td style="width:150px;"><h4>Nom</h4></td>
+					<td style="width:150px;"><h4>Classe</h4></td>
+					<td style="width:150px;"><h4>Ordre</h4></td>
+					<td style="width:150px;"><h4>Famille</h4></td>
+				</tr>
+				{% for animal in animaux %}
+				<tr>
+					<td>{{ animal.nom }}</td>
+					<td>{{ animal.classe }}</td>
+					<td>{{ animal.ordre }}</td>
+					<td>{{ animal.famille }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+			<div>
+		</div>
+	</body>
+</html>

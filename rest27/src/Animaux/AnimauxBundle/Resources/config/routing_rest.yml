@@ -1,0 +1,4 @@
+animaux :
+    type: rest
+    resource:     "AnimauxBundle:RestAPI"
+    name_prefix:  api_
